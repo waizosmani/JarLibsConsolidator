@@ -64,6 +64,7 @@ ls gradle-8.11.1-bin.zip
 # 产物：build/distributions/JarLibsConsolidator-<version>.zip
 # IDE 中安装：Settings/Preferences → Plugins → ⚙ → Install Plugin from Disk…
 ```
+**或者直接用Releases里我打包好的jar包，在IDEA插件选择本地磁盘安装即可。**
 
 ### 使用
 - 在 Project 视图中右键项目根目录或任意目录 → 选择“**一键添加依赖**”。
