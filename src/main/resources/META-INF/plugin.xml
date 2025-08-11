@@ -1,0 +1,44 @@
+<!-- Plugin Configuration File. Read more: https://plugins.jetbrains.com/docs/intellij/plugin-configuration-file.html -->
+<idea-plugin>
+    <!-- Unique identifier of the plugin. It should be FQN. It cannot be changed between the plugin versions. -->
+    <id>org.le1a.JarLibsConsolidator</id>
+
+    <!-- Public plugin name should be written in Title Case.
+         Guidelines: https://plugins.jetbrains.com/docs/marketplace/plugin-overview-page.html#plugin-name -->
+    <name>JarLibsConsolidator</name>
+
+    <!-- 设置兼容版本范围 -->
+    <idea-version since-build="241" until-build="251.*"/>
+
+    <!-- A displayed Vendor name or Organization ID displayed on the Plugins Page. -->
+    <vendor email="le1a.github.io@gmail.com" url="https://le1a.github.io/">Le1a</vendor>
+
+    <!-- Description of the plugin displayed on the Plugin Page and IDE Plugin Manager.
+         Simple HTML elements (text formatting, paragraphs, and lists) can be added inside of <![CDATA[ ]]> tag.
+         Guidelines: https://plugins.jetbrains.com/docs/marketplace/plugin-overview-page.html#plugin-description -->
+    <description><![CDATA[
+    一键收集项目中所有jar包依赖的工具插件。<br>
+    项目地址：<a href="https://github.com/Le1a/JarLibsConsolidator">https://github.com/Le1a/JarLibsConsolidator</a><br>
+    <em>功能：遍历项目目录收集所有jar文件，复制到all-in-one文件夹，并自动添加为项目库</em>
+  ]]></description>
+
+    <!-- Product and plugin compatibility requirements.
+         Read more: https://plugins.jetbrains.com/docs/intellij/plugin-compatibility.html -->
+    <depends>com.intellij.modules.platform</depends>
+
+    <!-- Extension points defined by the plugin.
+         Read more: https://plugins.jetbrains.com/docs/intellij/plugin-extension-points.html -->
+    <extensions defaultExtensionNs="com.intellij">
+
+    </extensions>
+
+    <!-- Plugin actions -->
+    <actions>
+        <action id="org.le1a.jarlibsconsolidator.AddJarDependenciesAction"
+                class="org.le1a.jarlibsconsolidator.AddJarDependenciesAction"
+                text="一键添加依赖"
+                description="将项目中所有jar包依赖添加为库">
+            <add-to-group group-id="ProjectViewPopupMenu" anchor="last"/>
+        </action>
+    </actions>
+</idea-plugin>
