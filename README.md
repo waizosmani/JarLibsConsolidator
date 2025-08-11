@@ -6,9 +6,13 @@
 
 ### 📺 演示视频
 
-[![JarLibsConsolidator Plugin Demo](https://img.youtube.com/vi/vE4H3-4ami0/maxresdefault.jpg)](https://www.youtube.com/watch?v=vE4H3-4ami0)
-
-点击上方图片观看完整演示视频 ↗️
+<div align="center">
+  <a href="https://www.youtube.com/watch?v=vE4H3-4ami0">
+    <img src="https://img.youtube.com/vi/vE4H3-4ami0/maxresdefault.jpg" alt="JarLibsConsolidator Plugin Demo" width="560" height="315" style="border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+  </a>
+  <br>
+  <p><em>🎬 点击播放按钮观看完整演示 | <a href="https://www.youtube.com/watch?v=vE4H3-4ami0">在新窗口打开</a></em></p>
+</div>
 
 ### 背景与动机
 
