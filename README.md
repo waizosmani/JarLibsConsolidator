@@ -4,7 +4,11 @@
 
 ![Kotlin](https://img.shields.io/badge/Kotlin-1.9.25-7F52FF?logo=kotlin) ![Gradle](https://img.shields.io/badge/Gradle-8.x-02303A?logo=gradle) ![IntelliJ%20Platform](https://img.shields.io/badge/IntelliJ%20Platform-241--251.*-000?logo=intellijidea) ![JDK](https://img.shields.io/badge/JDK-17-5382A1)
 
-📺 **演示视频**: [JarLibsConsolidator Plugin Demo](https://www.youtube.com/watch?v=vE4H3-4ami0)
+### 📺 演示视频
+
+[![JarLibsConsolidator Plugin Demo](https://img.youtube.com/vi/vE4H3-4ami0/maxresdefault.jpg)](https://www.youtube.com/watch?v=vE4H3-4ami0)
+
+点击上方图片观看完整演示视频 ↗️
 
 ### 背景与动机
 
