@@ -4,6 +4,14 @@
 
 ![Kotlin](https://img.shields.io/badge/Kotlin-1.9.25-7F52FF?logo=kotlin) ![Gradle](https://img.shields.io/badge/Gradle-8.x-02303A?logo=gradle) ![IntelliJ%20Platform](https://img.shields.io/badge/IntelliJ%20Platform-241--251.*-000?logo=intellijidea) ![JDK](https://img.shields.io/badge/JDK-17-5382A1)
 
+📺 **演示视频**: [JarLibsConsolidator Plugin Demo](https://www.youtube.com/watch?v=vE4H3-4ami0)
+
+### 背景与动机
+
+在进行代码审计工作时，我们经常需要分析已编译打包的 JAR 源码项目。然而，IntelliJ IDEA 往往无法自动识别所有的依赖关系，特别是在分析国产开源项目时更为明显。过去我一直使用 `cp \`find ./ -name "*.jar"\` ./all-in-one` 命令来手动收集依赖，但每次操作都颇为繁琐。
+
+为了提高工作效率，我开发了这个插件，让依赖收集变得简单高效——只需右键点击，即可完成所有 JAR 文件的收集、整理和项目库配置。
+
 ### 特性
 - **一键操作**：右键项目 → 选择"**一键添加依赖**"。
 - **智能扫描**：递归扫描 `.jar`，跳过常见目录（如 `node_modules`、`target`、`build`、`.gradle`、`.mvn` 等）。
