@@ -5,11 +5,28 @@
 ![Kotlin](https://img.shields.io/badge/Kotlin-1.9.25-7F52FF?logo=kotlin) ![Gradle](https://img.shields.io/badge/Gradle-8.x-02303A?logo=gradle) ![IntelliJ%20Platform](https://img.shields.io/badge/IntelliJ%20Platform-241--251.*-000?logo=intellijidea) ![JDK](https://img.shields.io/badge/JDK-17-5382A1)
 
 ### 特性
-- **一键操作**：右键项目 → 选择“**一键添加依赖**”。
+- **一键操作**：右键项目 → 选择"**一键添加依赖**"。
 - **智能扫描**：递归扫描 `.jar`，跳过常见目录（如 `node_modules`、`target`、`build`、`.gradle`、`.mvn` 等）。
 - **重名处理**：自动对同名 jar 加后缀去重（如 `x.jar` → `x_2.jar`）。
 - **统一管理**：复制到 `all-in-one/`，创建项目级库 `all-in-one` 并添加至所有模块依赖。
 - **版本兼容**：适配 2024.1–2025.1+（build `241`–`251.*`）线程模型与 API。
+
+### 前置依赖
+
+由于 Gradle 分发包体积较大（130MB+），需要手动下载并放置到项目根目录：
+
+```bash
+# 下载 Gradle 8.11.1 分发包
+wget https://mirrors.cloud.tencent.com/gradle/gradle-8.11.1-bin.zip
+
+# 或者使用 curl
+curl -O https://mirrors.cloud.tencent.com/gradle/gradle-8.11.1-bin.zip
+
+# 确保文件位于项目根目录
+ls gradle-8.11.1-bin.zip
+```
+
+**注意**：该文件已被 `.gitignore` 排除，不会被提交到版本控制中。
 
 ### 快速上手
 1) 本地运行（开发/体验）
